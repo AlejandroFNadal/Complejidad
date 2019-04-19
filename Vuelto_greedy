@@ -1,0 +1,20 @@
+n=0
+s=0
+i=0
+monedas = (100,50,25,10,5,1)
+monadar=[]
+vuelto=int(input("Introduir vuelto"))
+while((s < vuelto) and (i < 6)):
+    if((s + monedas[i]) <= vuelto):
+        s=s+monedas[i]
+        monadar.append(monedas[i])
+        n=n+1
+    else:
+        i=i+1
+if(i<6):
+    print("Necesitamos:")
+    print(n)
+    print("Monedas")
+    print(monadar)
+else:
+    print("No hay solucion")
